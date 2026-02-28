@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Night</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="navbar-container"></div>
+
+    <aside class="sidebar social-share">
+        <a href="#" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" title="Share on Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" title="Share on Instagram"><i class="fab fa-instagram"></i></a>
+    </aside>
+
+    <aside class="sidebar theme-changer">
+        <button onclick="setTheme('classic')" title="Classic Cinema (Red/Gold)"></button>
+        <button onclick="setTheme('scifi')" title="Sci-Fi (Dark Blue/Neon)"></button>
+        <button onclick="setTheme('noir')" title="Noir (Black/White)"></button>
+    </aside>
+
+    <main class="container">
+        <header class="marquee-header">
+            <h1>Movie Night</h1>
+            <p>Grab the popcorn and your best bud to enjoy.</p>
+        </header>
+
+        <section class="theatre-screen">
+            <video id="movie-player" controls>
+                <source src="snippets/trailer1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <div class="video-controls">
+                <button onclick="playVideo('snippets/movie1.mp4')">Play Movie 1</button>
+                <button onclick="playVideo('snippets/movie2.mp4')">Play Movie 2</button>
+                <button onclick="playVideo('snippets/movie3.mp4')">Play Movie 3</button>
+            </div>
+        </section>
+
+        <section class="subscribe-section">
+            <h2>Join the VIP Club</h2>
+            <form action="#" method="POST" class="subscribe-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <nav class="footer-nav">
+            <a href="about.html">About Us</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="contact.html">Contact Form</a>
+        </nav>
+        <p>&copy; 2026 Movie Night Productions.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
